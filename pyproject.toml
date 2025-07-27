@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "diffusion-dashboard"
+version = "0.1.0"
+description = "Decision-grade measurement and modelling of AI diffusion from infrastructure to macro outcomes."
+authors = [{name = "Global Economic News"}]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "pandas>=1.5",
+  "numpy>=1.23",
+  "matplotlib>=3.6",
+  "statsmodels>=0.13",
+  "pyyaml>=6.0"
+]
