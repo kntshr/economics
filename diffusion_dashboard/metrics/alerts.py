@@ -3,7 +3,7 @@ from __future__ import annotations
 def deployment_alert(c1: float, c4: float, c6: float, c7: float) -> str:
     if (c1 >= 30.0) and (c4 >= 5.0) and (c6 >= 95.0) and (c7 <= 0.5):
         return "GREEN"
-    if (c1 >= 30.0) ^ (c4 >= 5.0):
+    if (c1 >= 30.0) or (c4 >= 5.0):
         return "AMBER"
     return "RED"
 
